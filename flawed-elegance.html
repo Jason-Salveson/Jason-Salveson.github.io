@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flawed Elegance | Authentic Beauty</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..600&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'media', 
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], 
+                        serif: ['Playfair Display', 'serif'], 
+                    },
+                    colors: {
+                        elegance: {
+                            pearl: '#fdfcfb',
+                            charcoal: '#2a2828',
+                            blush: '#eadddb',
+                            rose: '#a66869',
+                            darkpearl: '#e8e4e3',
+                            void: '#141313', 
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-elegance-pearl dark:bg-elegance-void text-elegance-charcoal dark:text-elegance-darkpearl font-sans antialiased selection:bg-elegance-blush selection:text-elegance-charcoal transition-colors duration-300">
+    
+    <div class="noise-overlay"></div>
+
+    <nav class="p-8 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto relative z-10">
+        <div class="font-serif text-3xl font-bold italic tracking-wide text-elegance-rose hover:-rotate-1 transition-transform cursor-pointer">
+            Flawed Elegance.
+        </div>
+        <div class="space-x-10 text-sm tracking-widest mt-6 md:mt-0 uppercase">
+            <a href="#collection" class="hover:text-elegance-rose hover:-translate-y-0.5 inline-block transition-transform relative group">
+                The Collection
+                <svg class="absolute w-full h-2 -bottom-2 left-0 text-elegance-blush dark:text-elegance-rose/30 opacity-0 group-hover:opacity-100 transition-opacity -z-10" viewBox="0 0 100 10" preserveAspectRatio="none"><path d="M0 5 Q 40 8 100 2" stroke="currentColor" stroke-width="3" fill="transparent"/></svg>
+            </a>
+            <a href="#philosophy" class="hover:text-elegance-rose hover:-translate-y-0.5 inline-block transition-transform">Philosophy</a>
+            <a href="#cart" class="hover:text-elegance-rose hover:-translate-y-0.5 inline-block transition-transform">Cart (0)</a>
+        </div>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center gap-12 relative z-10">
+        <div class="flex-1 space-y-8 z-20">
+            <p class="font-serif italic text-xl text-elegance-rose">Unfiltered. Unapologetic.</p>
+            <h1 class="fluid-h1 font-serif font-black tracking-tight leading-[1.1] text-elegance-charcoal dark:text-elegance-pearl">
+                Perfection is <br>a <span class="relative inline-block">
+                    fabrication.
+                    <span class="absolute bottom-1 left-0 w-full h-4 bg-elegance-blush dark:bg-elegance-rose/20 -z-10 -rotate-2 rounded-lg"></span>
+                </span>
+            </h1>
+            <p class="fluid-p font-light max-w-lg leading-relaxed text-gray-600 dark:text-gray-400">
+                Our cosmetics aren't designed to mask your features or erase your history. We formulate deeply pigmented, breathable layers that celebrate the texture, asymmetry, and living warmth of real skin.
+            </p>
+            
+            <a href="#collection" class="inline-block mt-4 font-sans text-sm uppercase tracking-widest bg-elegance-charcoal dark:bg-elegance-pearl text-elegance-pearl dark:text-elegance-charcoal px-10 py-5 rounded-tl-[2rem] rounded-br-[2rem] rounded-tr-md rounded-bl-md hover:rounded-tl-md hover:rounded-br-md hover:rounded-tr-[2rem] hover:rounded-bl-[2rem] transition-all duration-500 shadow-xl shadow-elegance-charcoal/10">
+                Explore the Collection
+            </a>
+        </div>
+
+        <div class="flex-1 relative w-full aspect-square max-w-lg mx-auto">
+            <div class="w-full h-full bg-elegance-blush dark:bg-elegance-rose/10 rounded-[60%_40%_30%_70%/60%_30%_70%_40%] overflow-hidden relative shadow-2xl transition-all duration-700 hover:rounded-[40%_60%_70%_30%/50%_60%_30%_60%] border-4 border-white/50 dark:border-elegance-void/50 backdrop-blur-sm group">
+                <img src="Heroelegant.jpg" alt="Intimate, unretouched tactile portrait" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+            </div>
+            <svg class="absolute -bottom-8 -right-8 w-32 h-32 text-elegance-rose/40 -rotate-12 -z-10" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 50 C 30 10, 80 20, 90 60 C 95 90, 40 95, 20 70" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+    </header>
+
+    <main id="collection" class="max-w-7xl mx-auto px-6 py-24 relative z-10 border-t border-elegance-charcoal/10 dark:border-elegance-pearl/10">
+        
+        <div class="text-center mb-16">
+            <h2 class="font-serif text-4xl font-bold italic mb-4">Current Obsessions</h2>
+            <p class="font-light text-gray-500 uppercase tracking-widest text-sm">Embrace the Canvas</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 auto-rows-[minmax(300px,auto)]">
+            
+            <div class="md:col-span-7 group cursor-pointer">
+                <div class="w-full aspect-[4/3] bg-[#f2eaea] dark:bg-[#232020] rounded-[5%_15%_2%_8%] overflow-hidden mb-6 transition-all duration-500 group-hover:rounded-[10%_5%_8%_2%] flex items-center justify-center relative">
+                    <img src="lip&cheek.jpg" alt="Sanguine Lip & Cheek Tint application" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute bottom-6 left-6 bg-white dark:bg-elegance-charcoal px-4 py-2 rounded-full font-serif font-bold text-elegance-rose shadow-lg rotate-3 group-hover:-rotate-3 transition-transform">
+                        $34.00
+                    </div>
+                </div>
+                <h3 class="font-serif text-2xl mb-2 group-hover:text-elegance-rose transition-colors">Sanguine Lip & Cheek Tint</h3>
+                <p class="font-light text-sm text-gray-600 dark:text-gray-400">A sheer, buildable wash of color that mimics a natural flush.</p>
+            </div>
+
+            <div class="md:col-span-5 md:mt-16 group cursor-pointer">
+                <div class="w-full aspect-square bg-[#e8e4e3] dark:bg-[#1f1c1c] rounded-[15%_5%_8%_4%] overflow-hidden mb-6 transition-all duration-500 group-hover:rounded-[4%_12%_5%_15%] flex items-center justify-center relative">
+                    <img src="Naked-canvas.jpg" alt="Naked Canvas Serum glowing skin" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute bottom-6 left-6 bg-white dark:bg-elegance-charcoal px-4 py-2 rounded-full font-serif font-bold text-elegance-rose shadow-lg -rotate-2 group-hover:rotate-2 transition-transform">
+                        $58.00
+                    </div>
+                </div>
+                <h3 class="font-serif text-2xl mb-2 group-hover:text-elegance-rose transition-colors">Naked Canvas Serum</h3>
+                <p class="font-light text-sm text-gray-600 dark:text-gray-400">Hydration that leaves your natural texture exposed and glowing.</p>
+            </div>
+
+            <div class="md:col-span-12 group cursor-pointer mt-8">
+                <div class="w-full aspect-[21/9] md:aspect-[3/1] bg-elegance-blush dark:bg-[#2c2224] rounded-[2%_4%_2%_4%] overflow-hidden mb-6 flex items-center justify-center relative transition-all duration-700">
+                    <video src="Banner.mp4" autoplay loop muted playsinline class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-90"></video>
+                    <div class="absolute bottom-6 md:bottom-auto md:top-1/2 md:-translate-y-1/2 right-6 md:right-12 bg-elegance-charcoal dark:bg-elegance-pearl text-elegance-pearl dark:text-elegance-charcoal px-6 py-3 rounded-tr-2xl rounded-bl-2xl rounded-tl-sm rounded-br-sm font-serif font-bold hover:scale-105 transition-transform shadow-xl z-10">
+                        Shop The Archive
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-elegance-charcoal text-elegance-blush dark:bg-black dark:text-elegance-darkpearl py-16 text-center relative z-10 rounded-t-[3rem] mt-12 border-t border-elegance-charcoal/20">
+        <div class="font-serif text-3xl font-bold italic mb-6 text-white dark:text-elegance-pearl">Flawed Elegance.</div>
+        <p class="font-light text-sm opacity-70 mb-8 max-w-md mx-auto">Embracing the beautiful inconsistencies of the human form since 2026.</p>
+        <p class="font-sans text-xs uppercase tracking-widest opacity-50">&copy; 2026. Made by human hands.</p>
+    </footer>
+
+</body>
+</html>

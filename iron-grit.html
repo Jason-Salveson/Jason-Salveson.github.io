@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron & Grit | High-Performance Training</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'media', 
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'sans-serif'], 
+                        display: ['Oswald', 'sans-serif'], 
+                    },
+                    colors: {
+                        grit: {
+                            chalk: '#f4f4f0',
+                            iron: '#111111',
+                            rust: '#d9381e',
+                            asphalt: '#0a0a0a',
+                            chrome: '#e5e5e5',
+                            darkrust: '#b92b16'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-grit-chalk dark:bg-grit-asphalt text-grit-iron dark:text-grit-chrome font-sans antialiased selection:bg-grit-rust selection:text-white transition-colors duration-300">
+    
+    <div class="noise-overlay"></div>
+
+    <nav class="p-6 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto border-b-8 border-grit-iron dark:border-grit-chrome relative z-10">
+        <div class="font-display text-5xl font-black uppercase tracking-tighter hover:rotate-1 transition-transform cursor-pointer">
+            IRON<span class="text-grit-rust dark:text-grit-darkrust">&</span>GRIT
+        </div>
+        <div class="space-x-8 text-lg font-bold uppercase tracking-widest mt-4 md:mt-0">
+            <a href="#training" class="hover:text-grit-rust dark:hover:text-grit-darkrust hover:-translate-y-1 inline-block transition-transform">Training</a>
+            <a href="#nutrition" class="hover:text-grit-rust dark:hover:text-grit-darkrust hover:-translate-y-1 inline-block transition-transform">Nutrition</a>
+            <a href="#mindset" class="hover:text-grit-rust dark:hover:text-grit-darkrust hover:-translate-y-1 inline-block transition-transform">Mindset</a>
+        </div>
+    </nav>
+
+    <header class="max-w-7xl mx-auto px-6 py-32 flex flex-col items-start relative z-10 border-x-8 border-grit-iron dark:border-grit-chrome">
+        <h1 class="fluid-h1 font-display uppercase tracking-tighter leading-[0.9] text-grit-iron dark:text-white mb-6">
+            Refuse <br>
+            <span class="bg-grit-rust dark:bg-grit-darkrust text-white px-2 -ml-2 inline-block -rotate-1">Weakness.</span>
+        </h1>
+        <p class="fluid-p font-medium max-w-2xl border-l-4 border-grit-rust dark:border-grit-darkrust pl-6 mb-10">
+            This isn't a fitness lifestyle blog. This is a manual for building a machine. No sterile routines, no cookie-cutter diets. Just raw, unfiltered performance data and training protocols.
+        </p>
+        
+        <a href="#latest" class="font-display text-2xl uppercase tracking-widest bg-grit-iron dark:bg-white text-white dark:text-grit-iron px-12 py-6 border-4 border-transparent hover:border-grit-rust dark:hover:border-grit-darkrust hover:bg-transparent dark:hover:bg-transparent hover:text-grit-iron dark:hover:text-white transition-all shadow-[8px_8px_0px_rgba(217,56,30,1)] dark:shadow-[8px_8px_0px_rgba(185,43,22,1)] active:translate-x-2 active:translate-y-2 active:shadow-none">
+            Enter the Grind
+        </a>
+    </header>
+
+    <div class="max-w-7xl mx-auto border-x-8 border-grit-iron dark:border-grit-chrome relative z-20 h-20 sm:h-28 -mt-6 sm:-mt-10 mb-12">
+        <svg class="w-full h-full text-grit-rust dark:text-grit-darkrust drop-shadow-md" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path class="fill-current" d="M 25,80 L 120,75 L 220,85 L 320,65 L 420,75 L 520,55 L 620,65 L 720,45 L 820,55 L 920,35 L 1000,40 L 1000,10 L 920,15 L 820,25 L 720,15 L 620,35 L 520,25 L 420,45 L 320,35 L 220,55 L 120,45 L 25,50 Z"></path>
+        </svg>
+    </div>
+
+    <main id="latest" class="max-w-4xl mx-auto px-6 py-24 space-y-24 border-x-8 border-grit-iron dark:border-grit-chrome bg-white dark:bg-[#050505] relative z-10">
+        
+        <div class="border-b-8 border-grit-iron dark:border-grit-chrome pb-4 mb-16 flex items-end justify-between">
+            <h2 class="font-display text-4xl uppercase font-black tracking-tight">Latest Logs</h2>
+            <span class="font-mono text-sm font-bold text-grit-rust dark:text-grit-darkrust hidden md:inline-block">SYSTEM STATUS: ACTIVE</span>
+        </div>
+
+        <article class="group relative">
+            <div class="flex items-center gap-4 mb-4">
+                <span class="bg-grit-iron dark:bg-grit-chrome text-white dark:text-grit-iron font-display uppercase tracking-widest px-3 py-1 text-sm font-bold">Training</span>
+                <span class="text-gray-500 dark:text-gray-400 font-bold font-mono text-sm">04.14.2026</span>
+            </div>
+            <h3 class="font-display text-5xl md:text-6xl font-black uppercase tracking-tighter mb-6 group-hover:text-grit-rust dark:group-hover:text-grit-darkrust transition-colors cursor-pointer leading-none">
+                The Deadlift is Not Optional.
+            </h3>
+            <p class="fluid-p font-medium mb-8 text-gray-800 dark:text-gray-300 leading-relaxed">
+                Stop looking for hacks. Stop swapping it out for machine variations. If you want structural integrity and central nervous system adaptation, you have to pull heavy weight off the floor. Here is the 12-week progressive overload framework to break your plateau.
+            </p>
+            <a href="#" class="inline-block font-display text-xl uppercase tracking-widest font-bold border-b-4 border-grit-iron dark:border-grit-chrome hover:border-grit-rust dark:hover:border-grit-darkrust hover:text-grit-rust dark:hover:text-grit-darkrust transition-all pb-1">
+                Access Protocol &rarr;
+            </a>
+        </article>
+
+        <article class="group relative">
+            <div class="flex items-center gap-4 mb-4">
+                <span class="bg-grit-iron dark:bg-grit-chrome text-white dark:text-grit-iron font-display uppercase tracking-widest px-3 py-1 text-sm font-bold">Nutrition</span>
+                <span class="text-gray-500 dark:text-gray-400 font-bold font-mono text-sm">04.10.2026</span>
+            </div>
+            <h3 class="font-display text-5xl md:text-6xl font-black uppercase tracking-tighter mb-6 group-hover:text-grit-rust dark:group-hover:text-grit-darkrust transition-colors cursor-pointer leading-none">
+                Fueling the Machine: Carbohydrate Timing.
+            </h3>
+            <p class="fluid-p font-medium mb-8 text-gray-800 dark:text-gray-300 leading-relaxed">
+                Carbs are not the enemy; they are the explosive material. The problem isn't the macronutrient, it's your timing. Learn how to front-load your glycogen stores pre-training and trigger insulin spikes post-training for maximum recovery.
+            </p>
+            <a href="#" class="inline-block font-display text-xl uppercase tracking-widest font-bold border-b-4 border-grit-iron dark:border-grit-chrome hover:border-grit-rust dark:hover:border-grit-darkrust hover:text-grit-rust dark:hover:text-grit-darkrust transition-all pb-1">
+                Access Protocol &rarr;
+            </a>
+        </article>
+
+        <article class="group relative">
+            <div class="flex items-center gap-4 mb-4">
+                <span class="bg-grit-iron dark:bg-grit-chrome text-white dark:text-grit-iron font-display uppercase tracking-widest px-3 py-1 text-sm font-bold">Mindset</span>
+                <span class="text-gray-500 dark:text-gray-400 font-bold font-mono text-sm">04.02.2026</span>
+            </div>
+            <h3 class="font-display text-5xl md:text-6xl font-black uppercase tracking-tighter mb-6 group-hover:text-grit-rust dark:group-hover:text-grit-darkrust transition-colors cursor-pointer leading-none">
+                Embracing the Void.
+            </h3>
+            <p class="fluid-p font-medium mb-8 text-gray-800 dark:text-gray-300 leading-relaxed">
+                Motivation is a myth sold by supplement companies. Discipline is the only currency that matters. When you are under the bar and everything hurts, what drives you? We break down the psychology of pushing past the central governor.
+            </p>
+            <a href="#" class="inline-block font-display text-xl uppercase tracking-widest font-bold border-b-4 border-grit-iron dark:border-grit-chrome hover:border-grit-rust dark:hover:border-grit-darkrust hover:text-grit-rust dark:hover:text-grit-darkrust transition-all pb-1">
+                Access Protocol &rarr;
+            </a>
+        </article>
+
+        <div class="pt-12 border-t-8 border-grit-iron dark:border-grit-chrome flex justify-between items-center">
+            <button class="font-display text-2xl uppercase font-black text-gray-400 cursor-not-allowed">&larr; Newer Logs</button>
+            <button class="font-display text-2xl uppercase font-black hover:text-grit-rust dark:hover:text-grit-darkrust transition-colors">Older Logs &rarr;</button>
+        </div>
+
+    </main>
+
+    <footer class="bg-grit-iron text-grit-chrome dark:bg-black py-12 border-t-8 border-grit-rust dark:border-grit-darkrust text-center relative z-10">
+        <div class="font-display text-3xl font-black uppercase tracking-widest mb-4">IRON & GRIT</div>
+        <p class="font-mono text-sm text-gray-500">INITIATE PROTOCOL. EXECUTE. REPEAT.</p>
+        <p class="font-mono text-xs text-gray-600 mt-8">&copy; 2026. Built without apologies.</p>
+    </footer>
+
+</body>
+</html>
